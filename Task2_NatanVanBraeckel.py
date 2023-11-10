@@ -271,7 +271,7 @@ with tab_intro:
     plt.figure(figsize=(8, 6))
     score_counts = students_por_df['G3'].value_counts().sort_index()
     score_range = range(21)
-    plt.bar(score_range, [score_counts.get(score, 0) for score in score_range], color="orange")
+    plt.bar(score_range, [score_counts.get(score, 0) for score in score_range], color="green")
     plt.xlabel('Score')
     plt.ylabel('Aantal')
     plt.title('Distributie van scores')
