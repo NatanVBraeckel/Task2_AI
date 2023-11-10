@@ -159,10 +159,6 @@ st.title(":red[Machine Learning Benchmarking]", anchor=False)
 tab_intro, tab_linear, tab_lasso, tab_knr, tab_comparison = st.tabs(["Introductie", "Linear Regression", "Lasso", "KNeighborsRegressor", "Vergelijking"])
 
 with tab_intro:
-    # Display basic information
-    # st.markdown("# Exploratory Data Analysis")
-
-    # Display features and observations information
     st.subheader("Introductie")
 
     st.write("Mijn dataset gaat over scores die studenten halen op een vak.")
@@ -171,8 +167,8 @@ with tab_intro:
     st.write(f"#### Features en Observaties")
 
     st.write(f"Er zijn {students_math_df.shape[1]} kolommen in beide datasets.")
-    st.write(f"Er zijn {students_math_df.shape[0]} observaties in the math dataset.")
-    st.write(f"Er zijn {students_por_df.shape[0]} observaties in the portuguese dataset.")
+    st.write(f"Er zijn {students_math_df.shape[0]} observaties in de math dataset.")
+    st.write(f"Er zijn {students_por_df.shape[0]} observaties in de portuguese dataset.")
 
     # Display Features information
     st.write("### Features")
@@ -251,7 +247,7 @@ with tab_intro:
         Ik heb ervoor gekozen om door te gaan met de dataset voor scores voor portugees omdat er meer observaties zijn.\
         Ook zijn er minder finale scores van 0 in die dataset.
 
-        Ik was aan het twijfelen om de datasets met elkaar te mergen, maar ik stootte op een probleem. Dus ik vraagde advies aan ChatGPT.
+        Ik was aan het twijfelen om de datasets met elkaar te mergen, maar ik stootte op een probleem. Dus ik vroeg advies aan ChatGPT.
         #### De prompt die ik heb gegeven:
 
         *There are two datasets at my disposal, one for math and one for portuguese.\
