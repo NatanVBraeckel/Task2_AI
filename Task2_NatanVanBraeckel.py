@@ -165,6 +165,9 @@ with tab_intro:
     # Display features and observations information
     st.subheader("Introductie")
 
+    st.write("Mijn dataset gaat over scores die studenten halen op een vak.")
+    st.write("In de link waren er 2 datasets gegeven, 1 voor math en 1 voor portugees.")
+
     st.write(f"#### Features en Observaties")
 
     st.write(f"Er zijn {students_math_df.shape[1]} kolommen in beide datasets.")
@@ -293,7 +296,7 @@ with tab_linear:
     with cols[0]:
         random_state = st.text_input("Random state (niet verplicht)", key=1)
 
-    if st.button('Bereken linear regression'):
+    if st.button('Bereken Linear Regression'):
         if random_state:
             try:
                 random_state = int(random_state)
@@ -319,7 +322,7 @@ with tab_lasso:
     with cols[1]:
         random_state_lasso = st.text_input("Random state (niet verplicht)", key=2)
 
-    if st.button('Bereken lasso'):
+    if st.button('Bereken Lasso'):
         if random_state_lasso:
             try:
                 random_state_lasso = int(random_state_lasso)
